@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="speedtesrstyle.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Typing Speed Tester</h1>
+
+        <div id="sample-text">
+            An object is a basic unit of oops that represent real life entities.
+            A typical java program create many objects which as you know interacts by invoking method .The object are
+            what perform your code, they are the part of your code visible to the user.
+
+        </div>
+
+        <textarea name="typing area" id="typing area">check your speed....</textarea>
+
+        <div class="controls">
+            <div>
+                Time: <span id="timer">60</span>s
+            </div>
+
+            <div>
+                <button class="start" onclick="startTest()">Start</button>
+                <button class="reset" onclick="resetTest()">Reset</button>
+            </div>
+        </div>
+
+        <div class="results">
+            <div class="card">WPM: <span id="wpm">0</span></div>
+            <div class="card">Accuracy: <span id="accuracy">0</span>%</div>
+            <div class="card">Errors: <span id="errors">0</span></div>
+            <div class="card">CPM: <span id="cpm">0</span></div>
+        </div>
+    </div>
+    <script src="speedtestscript.js"></script>
+
+
+</body>
+
+</html>
